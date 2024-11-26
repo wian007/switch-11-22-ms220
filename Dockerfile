@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     perl binutils make build-essential flex bison ncurses-dev file \
     wget cpio unzip rsync bc git ca-certificates u-boot-tools xxd ruby \
     gcc patch bzip2 gettext pkg-config libz-dev \
-    less libmpc-dev
+    less libmpc-dev libexpat-dev
 
 WORKDIR /src/buildroot
