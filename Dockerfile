@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc patch bzip2 gettext pkg-config libz-dev \
     less libmpc-dev libexpat-dev automake
 
-# Nasty workarround missing *-1.14
+# TODO: Nasty workarround missing *-1.14
 RUN ln -s /usr/bin/aclocal /usr/bin/aclocal-1.14
 RUN ln -s /usr/bin/automake /usr/bin/automake-1.14
 
