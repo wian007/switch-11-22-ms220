@@ -21,6 +21,8 @@ cd linux-3.18
 make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips msxx_defconfig
 make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips prepare
 make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips vmlinux
+# Build linux headers tarball
+make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips tarbz2-pkg
 ../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl-objcopy -O binary -S vmlinux vmlinux.bin
 ```
 
@@ -39,6 +41,8 @@ cd linux-3.18
 make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips msxx_defconfig
 make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips prepare
 make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips vmlinuz
+# Build linux headers tarball
+make CROSS_COMPILE=../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl- ARCH=mips tarbz2-pkg
 ../openwrt/staging_dir_mipsel_nofpu_3.18/bin/mipsel-linux-musl-objcopy -O binary -S vmlinuz vmlinuz.bin
 ```
 
